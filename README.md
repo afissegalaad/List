@@ -12,6 +12,8 @@ It is to show several development tricks that can be used in different context.
 
 ## Examples
 
+# Using the library
+
 ```C
 List *list = make_list();
 List *el = make_element_list(2);
@@ -19,8 +21,30 @@ list = insert_element_list_head(list, el);
 list = free_list(list);
 ```
 
-This example shows how to create a list and an element and how to add the element to the list.
-Then free the list.
+This example shows how to create a list and an element and how to add
+the element to the list.  Then free the list.
+
+---
+
+# Using trace
+
+```C
+#define OUT stdout
+List* free_list(List *list){
+  TRACE_DEBUG(OUT);
+  if (list == NULL) return NULL;
+  List* list_head = list;
+  while(list_head != 0){
+    TRACE_DEBUG_MSG(OUT,"while");
+    list = list_head->next;
+    free_element_list(list_head);
+    list_head = list;
+  }
+  return NULL;
+}
+```
+
+This example show how `free_list` is implemented using `TRACE` macros.
 
 ## Installation
 
