@@ -34,7 +34,7 @@ List* free_list(List *list){
   TRACE_DEBUG(OUT);
   if (list == NULL) return NULL;
   List* list_head = list;
-  while(list_head != 0){
+  while(list_head != NULL){
     TRACE_DEBUG_MSG(OUT,"while");
     list = list_head->next;
     free_element_list(list_head);
