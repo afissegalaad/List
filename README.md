@@ -12,7 +12,7 @@ It is to show several development tricks that can be used in different context.
 
 ## Examples
 
-# Using the library
+### Using the library
 
 ```C
 List *list = make_list();
@@ -26,7 +26,7 @@ the element to the list.  Then free the list.
 
 ---
 
-# Using trace
+### Using trace
 
 ```C
 #define OUT stdout
