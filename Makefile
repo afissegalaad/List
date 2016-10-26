@@ -3,7 +3,7 @@ CFLAGS =
 all: test.out
 
 debug: CFLAGS += -DDEBUG -g
-debug: main.out
+debug: test.out
 
 test: test.out
 	./test.out
