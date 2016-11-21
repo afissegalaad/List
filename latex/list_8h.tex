@@ -1,0 +1,64 @@
+\hypertarget{list_8h}{}\section{list.\+h File Reference}
+\label{list_8h}\index{list.\+h@{list.\+h}}
+
+
+File containing chained list header.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}value.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct___list}{\+\_\+\+List}
+\begin{DoxyCompactList}\small\item\em Type the represents both a chained list and an element of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}\label{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}} 
+typedef struct \hyperlink{struct___list}{\+\_\+\+List} \hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List}
+\begin{DoxyCompactList}\small\item\em Type the represents both a chained list and an element of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{list_8h_a7f68324a696f1376fc23fba2f0b1474b}\label{list_8h_a7f68324a696f1376fc23fba2f0b1474b}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ \hyperlink{list_8h_a7f68324a696f1376fc23fba2f0b1474b}{make\+\_\+element\+\_\+list} (Value value)
+\begin{DoxyCompactList}\small\item\em Create an element of a list from a value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{list_8h_a2196bd2c73f9d2d7d5beee4b82e33363}\label{list_8h_a2196bd2c73f9d2d7d5beee4b82e33363}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ {\bfseries free\+\_\+element\+\_\+list} (\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$element)
+\item 
+\mbox{\Hypertarget{list_8h_a46ee2297aff8537644d8df3c85613afa}\label{list_8h_a46ee2297aff8537644d8df3c85613afa}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ {\bfseries make\+\_\+list} ()
+\item 
+\mbox{\Hypertarget{list_8h_ab7a4fb71f48975b79bb14fe699b70d71}\label{list_8h_ab7a4fb71f48975b79bb14fe699b70d71}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ {\bfseries free\+\_\+list} (\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$list)
+\item 
+\mbox{\Hypertarget{list_8h_a0d0b8f84d45950f39b76c98fbe137a69}\label{list_8h_a0d0b8f84d45950f39b76c98fbe137a69}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ {\bfseries insert\+\_\+element\+\_\+list\+\_\+head} (\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$list, \hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$element)
+\item 
+\mbox{\Hypertarget{list_8h_ab352a9cad17d976d2801f2270c631173}\label{list_8h_ab352a9cad17d976d2801f2270c631173}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ {\bfseries insert\+\_\+element\+\_\+list\+\_\+end} (\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$list, \hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$element)
+\item 
+\mbox{\Hypertarget{list_8h_abdd5c7b783aca5ba6b4ee8fb7aa33007}\label{list_8h_abdd5c7b783aca5ba6b4ee8fb7aa33007}} 
+\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$ {\bfseries extract\+\_\+element\+\_\+list} (\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$list, \hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$element)
+\item 
+\mbox{\Hypertarget{list_8h_a9dbc3a3290e803b6b5b06cd1c45d61b9}\label{list_8h_a9dbc3a3290e803b6b5b06cd1c45d61b9}} 
+int {\bfseries length\+\_\+list} (\hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$list)
+\item 
+\mbox{\Hypertarget{list_8h_acd9c9ffad6e1aeff3d932f2fb8a0f239}\label{list_8h_acd9c9ffad6e1aeff3d932f2fb8a0f239}} 
+void {\bfseries print\+\_\+element} (F\+I\+LE $\ast$out, \hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$element)
+\item 
+\mbox{\Hypertarget{list_8h_a35aefd8074c92610552210947c3df572}\label{list_8h_a35aefd8074c92610552210947c3df572}} 
+void {\bfseries print\+\_\+list} (F\+I\+LE $\ast$out, \hyperlink{list_8h_a6e8df23dc94cc3a5bfe8a30addb6ebbf}{List} $\ast$list)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing chained list header. 
+
+\begin{DoxyAuthor}{Author}
+Galaad 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+27 Oct. 2016 
+\end{DoxyDate}

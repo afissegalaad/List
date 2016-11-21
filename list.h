@@ -1,13 +1,26 @@
+/**
+ * @file list.h
+ * @author Galaad
+ * @date October 27, 2016
+ * @brief Chained list.
+ */
+
 #ifndef LIST
 #define LIST
 #include <stdio.h>
 #include "value.h"
 
+/**
+ * @brief Type the represents both a chained list and an element of the list.
+ */
 typedef struct _List{
-  Value value;
-  struct _List *next;
+  Value value; /** value of the element */
+  struct _List *next; /** next element in the list */
 } List;
 
+/**
+ * @brief Create an element of a list from a value.
+ */
 List* make_element_list(Value value);
 List* free_element_list(List *element);
 List* make_list();
