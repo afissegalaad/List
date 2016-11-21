@@ -61,7 +61,7 @@ void test_extract(){
 
 ## Installation
 
-Build the library, install it on your OS then Include the header in your C code:
+Build the library, install it on your OS then include the header in your C code:
 
 ```C
 include <list.h>
