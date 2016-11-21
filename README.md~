@@ -27,8 +27,6 @@ int main(){
 This example shows how to use the library. It creates a list and an element and how to add
 the element to the list. Then it frees the list.
 
----
-
 ### Trace the code
 
 ```C
